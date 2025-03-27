@@ -1,4 +1,4 @@
-A simple url shortener
+A simple redis backed url shortener
 
 Have a redis address either on localhost:6379 or put an address into the environment variable `REDIS_ADDRESS`
 
