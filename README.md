@@ -10,8 +10,12 @@ go run main.go
 Then you can
 
 ```
-curl  -X POST -H 'Content-Type: application/json' localhost:8080/manage --data-raw '{"long_link":"https://cnn.com"}' 
-{"short_link":"og6HR0vIwi"}
+22:11 $ curl -i -X POST -H 'Content-Type: application/json' localhost:8080/manage --data-raw '{"long_link":"https://cnn.com"}' HTTP/1.1 200 OK
+Date: Thu, 27 Mar 2025 03:20:38 GMT
+Content-Length: 28
+Content-Type: text/plain; charset=utf-8
+
+{"short_link":"WIjyMkyupl"}
 ```
 
 Then go to localhost:8080/<<whatever you got back from `short_link`>>
